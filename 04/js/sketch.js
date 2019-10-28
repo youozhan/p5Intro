@@ -30,8 +30,6 @@ function draw() {
 function gotText(nytimes){
   console.log("request sent");
   texts = nytimes.response.docs[0].headline.main;
-  console.log(nytimes.response.docs[0].headline.main);
-  console.log(texts.length);
 
   createP(texts).addClass('text');
 
@@ -45,5 +43,5 @@ function gotText(nytimes){
     }
   }
 
-  setTimeout(gotText, 3000);
+  // setTimeout(gotText, 3000);
 }
