@@ -2,14 +2,14 @@ var pokemonList = [];
 var randomPokemon;
 
 function preload() {
-  // pokemons = loadStrings('all_pokemons.csv');
+  pokemonList = loadStrings('pokemon.csv');
 }
 
 function setup() {
   noCanvas();
-  var url = 'https://pokeapi.co/api/v2/pokemon/';
-  loadJSON(url, gotData);
-
+  // var url = 'https://pokeapi.co/api/v2/pokemon/';
+  // loadJSON(url, gotData);
+  
   console.log(pokemonList);
 
   let button = select('#button');
@@ -18,12 +18,12 @@ function setup() {
   });
 }
 
-function gotData(data){
+// function gotData(data){
 
-  var length = data.results.length; 
-  console.log(length);
+//   var length = data.results.length; 
+//   console.log(length);
 
-  for (let i = 0; i < length; i++ ){
-    pokemonList.push(data.results[i].name);
-  }
-}
+//   for (let i = 0; i < length; i++ ){
+//     pokemonList.push(data.results[i].name);
+//   }
+// }
