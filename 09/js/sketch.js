@@ -6,6 +6,7 @@ function preload() {
 }
 
 function setup() {
+  noCanvas();
   var url = 'https://pokeapi.co/api/v2/pokemon/';
   loadJSON(url, gotData);
 
@@ -13,12 +14,8 @@ function setup() {
 
   let button = select('#button');
   button.mousePressed(function(){
-    let span = createSpan(random(pokemonList));
+    createP(random(pokemonList));
   });
-}
-
-function draw(){
-
 }
 
 function gotData(data){
