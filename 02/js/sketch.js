@@ -24,7 +24,7 @@ function draw(){
   // Arrow pointing out the wind direction
   push();
   translate(32,height-32);
-  //insert a variable
+  // Insert a variable
   rotate(wind.heading()+PI/2);
   noStroke();
   fill(255);
@@ -58,7 +58,7 @@ function askWeather(){
   //var url = 'http://api.weatherstack.com/current?access_key=bea4af6c1510c5f3935b58dfd760c015&query=London';
   
   var api = 'http://api.weatherstack.com/current?access_key=bea4af6c1510c5f3935b58dfd760c015&query=';
-  // var city = 'London';
+  //var city = 'London';
   var url = api + input.value();
 
   loadJSON(url,gotWeather);

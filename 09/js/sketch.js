@@ -35,6 +35,7 @@ function mousePressed(){
   fill(255);
   // console.log(pokemonName + pokemonHeight + pokemonWeight);
   textAlign(CENTER,CENTER);
+  textSize(20);
   text(pokemonName[index],map(pokemonWeight[index],0,1200,100,width-100),map(pokemonHeight[index],0,20,100,height-100));
   index ++;
 
